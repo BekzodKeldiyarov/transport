@@ -1,0 +1,87 @@
+.drive {
+    padding: 80px 0;
+    text-align: center;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    &__item {
+        min-height: 550px;
+        padding: 10px 0 70px;
+        box-sizing: border-box;
+        margin: 0 10px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &__subtitle {
+            font-size: 16px;
+            color: #999ca5
+        }
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    &__name-wrapper {
+        background: linear-gradient(to bottom, #fff, #f4f7f9);
+        padding: 30px 0 10px;
+        min-height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__price {
+        color: #999ca5;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+
+        &-amount {
+            font-size: 60px;
+            color: #242f51;
+            font-weight: 700;
+        }
+    }
+
+    &__name {
+        font-size: 20px;
+        color: #242f51;
+        font-weight: 700;
+    }
+
+    &__include {
+        &__list {
+            list-style: none;
+            padding: 30px 0 10px;
+            box-sizing: border-box;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #999ca5;
+        }
+    }
+
+
+    &__button {
+        border-color: #2e9557;
+        color: #000;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -90px;
+
+        &:hover {
+            background-color: rgba(46, 149, 87, 0.8);
+            color: #fff;
+        }
+    }
+}
