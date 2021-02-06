@@ -1,4 +1,48 @@
-.contact{
+.contact {
     border: 1px solid red;
     min-height: 500px;
+
+    &__title {
+        text-align: center;
+    }
+
+    .form {
+        border: 1px solid red;
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        &__input {
+            min-width: 260px;
+            min-height: 50px;
+            border-radius: 10px;
+            border: 1px solid #bbb;
+            box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+            padding: 0 20px;
+        }
+
+
+    }
+
+    .address__list {
+        list-style: none;
+        padding: 0;
+    }
+    .address__item{
+        margin-bottom: 20px;
+    }
+
+}
+
+.button__submit {
+    background-color: #2E9557;
+
+    &:hover {
+        border: 3px solid #2E9557;
+    }
 }
