@@ -1,13 +1,14 @@
 .contact {
-    border: 1px solid red;
     min-height: 500px;
+
+
 
     &__title {
         text-align: center;
     }
 
     .form {
-        border: 1px solid red;
+        margin: 30px 0;
 
         &__list {
             list-style: none;
@@ -15,6 +16,7 @@
             display: flex;
             justify-content: space-between;
             margin-top: 50px;
+            flex-wrap: wrap;
         }
 
         &__input {
@@ -26,15 +28,49 @@
             padding: 0 20px;
         }
 
+    }
 
+    .address {
+        padding: 100px 0;
     }
 
     .address__list {
         list-style: none;
         padding: 0;
     }
-    .address__item{
+
+    .address__item {
         margin-bottom: 20px;
+        font-size: 20px;
+        color: #616368;
+        padding-left: 30px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 0px;
+            background-image: url('./../../icons/time.svg');
+            background-size: cover;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #616368;
+
+            // font-family: 'Open Sans' , sans-serif;
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    .contact__map iframe {
+        width: 100%;
     }
 
 }

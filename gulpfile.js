@@ -1,4 +1,4 @@
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const rename = require("gulp-rename");
@@ -8,7 +8,7 @@ const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const webp = require('gulp-webp');
 // Static server
-gulp.task('server', function() {
+gulp.task('server', function () {
     browserSync.init({
         server: {
             baseDir: "dist"
@@ -17,53 +17,62 @@ gulp.task('server', function() {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-gulp.task("styles", function(){
+gulp.task("styles", function () {
     return gulp.src("src/sass/**/*.+(scss|sass)")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(rename({
             prefix: "",
             suffix: ".min",
-          }))   
+        }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
             cascade: false
-        })) 
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        }))
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', function () {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel("styles"));
     gulp.watch("src/*.html").on("change", gulp.parallel('html'));
+    gulp.watch("src/icons/**/*", gulp.parallel("icons"));
+    gulp.watch("src/img/**/*", gulp.parallel("images"));
+    gulp.watch("src/js/**/*", gulp.parallel("scripts"));
 });
 
-gulp.task('html', function(){
+gulp.task('html', function () {
     return gulp.src("src/*.html")
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({
+            collapseWhitespace: true
+        }))
         .pipe(gulp.dest("dist/"));
 });
 
-gulp.task('scripts', function(){
+gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
-    .pipe(gulp.dest("dist/js"));
+        .pipe(gulp.dest("dist/js"));
 });
-gulp.task('fonts', function(){
+gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
-    .pipe(gulp.dest("dist/fonts"));
+        .pipe(gulp.dest("dist/fonts"));
 });
-gulp.task('icons', function(){
+gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
-    .pipe(gulp.dest("dist/icons"));
+        .pipe(gulp.dest("dist/icons"));
 });
-gulp.task('mailer', function(){
+gulp.task('mailer', function () {
     return gulp.src("src/mailer/**/*")
-    .pipe(gulp.dest("dist/mailer"));
+        .pipe(gulp.dest("dist/mailer"));
 });
-gulp.task('images', function(){
+gulp.task('images', function () {
     return gulp.src("src/img/**/*")
-    .pipe(imagemin())
-    .pipe(gulp.dest("dist/img"));
+        .pipe(imagemin())
+        .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images'));

@@ -6,4 +6,17 @@
     margin-left: calc(-1 * 100% / 2);
 
     background-color: transparent !important;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #616368;
 }
