@@ -19,13 +19,18 @@
     letter-spacing: 2px;
     font-weight: 500;
     color: #616368;
+    color: #fff !important;
 }
+
 
 @media(max-width:991px) {
     header {
-
         .navbar {
             background-color: rgba(46, 149, 87, 1) !important;
         }
     }
+}
+
+.footer .nav-link {
+    color: #616368 !important;
 }
