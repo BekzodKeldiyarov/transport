@@ -25,7 +25,7 @@
             </div>
 
             <div class="row">
-                <form action="https://echo.htmlacademy.ru" class="application-form form col-md-8">
+                <form id="applicant-form" action="" class="application-form form col-md-8">
 
                     <fieldset class="applicant-information">
                         <legend class="subtitle">
@@ -38,28 +38,28 @@
                                     First Name
                                 </label>
                                 <input type="text" id="applicant-first-name" class="form-control"
-                                    name="applicant-first-name">
+                                    name="applicantFirstName">
                             </li>
                             <li class="applicant-information__item col-md-3">
                                 <label for="applicant-middle-name">
                                     Middle Name
                                 </label>
                                 <input type="text" id="applicant-middle-name" class="form-control"
-                                    name="applicant-middle-name">
+                                    name="applicantMiddleName">
                             </li>
                             <li class="applicant-information__item col-md-3">
                                 <label for="applicant-last-name">
                                     Last Name
                                 </label>
                                 <input type="text" id="applicant-last-name" class="form-control"
-                                    name="applicant-last-name">>
+                                    name="applicantLastName">
                             </li>
                             <li class="applicant-information__item col-md-3">
                                 <label for="applicant-suffix">
                                     Suffix
                                 </label>
-                                <select class="form-select" id="applicant-suffix" name="applicant-suffix">
-                                    <option selected></option>
+                                <select class="form-select" id="applicantSuffix" name="applicantSuffix">
+                                    <option value="">Choose</option>
                                     <option value="2">II</option>
                                     <option value="3">III</option>
                                     <option value="4">IV</option>
@@ -99,7 +99,7 @@
                                 <label for="applicant-email">
                                     Email Address
                                 </label>
-                                <input type="applicant-email" id="email" class="form-control" name="applicant-email">
+                                <input type="email" id="applicant-email" class="form-control" name="applicantEmail">
                             </li>
                             <li class="applicant-information__item col-md-8">
                                 <label for="applicant-address">
@@ -118,7 +118,7 @@
                                 <label for="applicant-state">
                                     State
                                 </label>
-                                <select class="form-control" id="applicant-state" name="applicant-state">
+                                <select class="form-control" id="applicant-state" name="applicantState">
                                     <optgroup label="USA">
                                         <option value="">N/A</option>
                                         <option value="AK">Alaska</option>
@@ -504,7 +504,7 @@
                                 <label for="applicant-twic-card">
                                     Do you have a TWIC Card?
                                 </label>
-                                <select class="form-control" id="applicant-twic-card" name="applicant-twic-card">
+                                <select class="form-control" id="applicant-twic-card" name="applicantTwicCard">
 
                                     <option value=""></option>
                                     <option value="Yes">Yes</option>
@@ -516,7 +516,7 @@
                                 <label for="applicant-passport">
                                     Do you have a passport?
                                 </label>
-                                <select class="form-control" id="applicant-passport" name="applicant-passport">
+                                <select class="form-control" id="applicant-passport" name="applicantPassport">
                                     <option value=""></option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -963,16 +963,16 @@
 
                         <ul class="driver__list row">
                             <li class="driver__item col-md-3">
-                                <label for="driver-first-name">
+                                <label for="driver-first-name" names>
                                     First Name
                                 </label>
-                                <input type="text" class="form-control" id="driver-first-name" name="driver-first-name">
+                                <input type="text" class="form-control" id="driver-first-name" name="driverFirstName">
                             </li>
                             <li class="driver__item col-md-3">
                                 <label for="driver-last-name">
                                     Last Name
                                 </label>
-                                <input type="text" class="form-control" id="driver-last-name" name="driver-last-name">
+                                <input type="text" class="form-control" id="driver-last-name" name="driverLastName">
                             </li>
                             <li class="driver__item col-md-3">
                                 <label for="driver-issued">
@@ -2474,12 +2474,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
     </script>
-
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/additional-methods.min.js"></script>
+    <script src="./js/index.js"></script>
     <script>
         $(document).ready(function () {
-            $("#social-security-number").inputmask({
-                "mask": "(999) 99-999-99-99"
-            });
+
         });
     </script>
 </body>
