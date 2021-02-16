@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/applicant.min.css">
 </head>
 
-<body>
+<body style="position: relative;">
 
     <section class="application">
         <div class="container">
@@ -2391,7 +2391,7 @@
                         </strong>
                         <ul class="acceptance__list row mt-2">
                             <li class="acceptance__item col-md-8">
-                                <button class="btn acceptance__button form-control mb-1" id="acceptance-button">
+                                <button class="btn acceptance__button form-control mb-1" id="acceptance-button" type="button">
 
                                 </button>
                                 <label for="acceptance-button">Applicant Signature</label>
@@ -2414,7 +2414,7 @@
     </section>
 
 
-    <section class="sign-document">
+    <section class="sign-document popup">
         <div class="container">
 
 
@@ -2459,12 +2459,13 @@
                 </li>
             </ul>
 
-            <button class="btn btn-primary">Sign Document</button>
-            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
+            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
         </div>
 
     </section>
 
+    <div class="popup-overlay"></div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -2480,9 +2481,22 @@
     <script src="./js/index.js"></script>
     <script>
         $(document).ready(function () {
+            $contact = $("#acceptance-button");
+            $close = $("#cancel-sign-document-button");
+            $overlay = $(".popup-overlay");
+            $contact.on('click', function () {
+                console.log("bekzod");
+                $('.popup').fadeIn();
+                $overlay.toggleClass("overlay");
+            })
 
+            $close.on('click', function () {
+                $('.popup').fadeOut();
+                $overlay.toggleClass("overlay");
+            })
         });
     </script>
+
 </body>
 
 </html>
