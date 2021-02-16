@@ -76,8 +76,8 @@
                                 <label for="social-security-number">
                                     Social Security Number
                                 </label>
-                                <input type="text" id="social-security-number" class="form-control"
-                                    name="applicant-social-security-number">
+                                <input type="text" id="social-security-number"
+                                    class="social-security-number form-control" name="applicant-social-security-number">
                             </li>
                             <li class="applicant-information__item col-md-4">
                                 <label for="applicant-phone-number">
@@ -2517,39 +2517,41 @@
                 The signature of the applicant confirming submission of the Application For Employment.
             </p>
 
-            <ul class="sign-document__list row">
-                <li class="sign-document__item col-md-7">
-                    <label for="sign-document-social-security-number">
-                        Social Security Number
-                    </label>
-                    <input type="text" id="sign-document-social-security-number" class="form-control"
-                        name="sign-document-social-security-number">
-                </li>
-                <li class="sign-document__item col-md-7">
-                    <label for="repeat-sign-document-social-security-number">
-                        Repeat Social Security Number
-                    </label>
-                    <input type="text" id="repeat-sign-document-social-security-number" class="form-control"
-                        name="repeat-sign-document-social-security-number">
-                </li>
-                <li class="sign-document__item col-md-7">
-                    <label for="sign-document-birth-date">
-                        Date of Birth
-                    </label>
-                    <input type="date" id="sign-document-birth-date" class="form-control" min="1900-01-01"
-                        max="2021-02-28" name="sign-document-birth-date">
-                </li>
-                <li class="sign-document__item col-md-7">
-                    <label for="repeat-sign-document-birth-date">
-                        Repeat Date of Birth
-                    </label>
-                    <input type="date" id="repeat-sign-document-birth-date" class="form-control" min="1900-01-01"
-                        max="2021-02-28" name="repeat-sign-document-birth-date">
-                </li>
-            </ul>
+            <form id="sign-document__form" action="" class="sign-document__form">
+                <ul class="sign-document__list row">
+                    <li class="sign-document__item col-md-7">
+                        <label for="sign-document-social-security-number">
+                            Social Security Number
+                        </label>
+                        <input type="text" id="sign-document-social-security-number"
+                            class="social-security-number form-control" name="signDocumentSocialSecurityNumber">
+                    </li>
+                    <li class="sign-document__item col-md-7">
+                        <label for="repeat-sign-document-social-security-number">
+                            Repeat Social Security Number
+                        </label>
+                        <input type="text" id="repeat-sign-document-social-security-number"
+                            class="social-security-number form-control" name="repeatSignDocumentSocialSecurityNumber">
+                    </li>
+                    <li class="sign-document__item col-md-7">
+                        <label for="sign-document-birth-date">
+                            Date of Birth
+                        </label>
+                        <input type="date" id="sign-document-birth-date" class="form-control" min="1900-01-01"
+                            max="2021-02-28" name="sign-document-birth-date">
+                    </li>
+                    <li class="sign-document__item col-md-7">
+                        <label for="repeat-sign-document-birth-date">
+                            Repeat Date of Birth
+                        </label>
+                        <input type="date" id="repeat-sign-document-birth-date" class="form-control" min="1900-01-01"
+                            max="2021-02-28" name="repeat-sign-document-birth-date">
+                    </li>
+                </ul>
 
-            <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
-            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+                <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
+                <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+            </form>
         </div>
     </section>
 

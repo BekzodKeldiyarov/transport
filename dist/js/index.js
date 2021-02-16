@@ -82,9 +82,13 @@ $().ready(function () {
                 required: true,
                 equalTo: "#driver-licence-number"
             },
-            medicalCertificateExpires:{
+            medicalCertificateExpires: {
                 required: true
-            }
+            },
+            signDocumentSocialSecurityNumber: {
+                required: true
+            },
+
         },
         messages: {
             socialSecurityNumber: "Please enter the social security number",
@@ -118,7 +122,19 @@ $().ready(function () {
         }
     })
 
-    $("#social-security-number").inputmask({
+    $('#sign-document__form').validate({
+        rules: {
+            signDocumentSocialSecurityNumber: {
+                required: true
+            },
+            repeatSignDocumentSocialSecurityNumber: {
+                required: true,
+                equalTo: "#sign-document-social-security-number"
+            }
+        }
+    })
+
+    $(".social-security-number").inputmask({
         "mask": "999-99-9999"
     });
     $("#applicant-phone-number, #applicant-alt-number").inputmask({
