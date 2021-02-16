@@ -1,0 +1,56 @@
+.upload {
+    padding: 80px 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin: 10px 0;
+    }
+
+    .upload-form {
+        background-color: #eee;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+.upload-violation .upload-form {
+
+    background-color: #fff;
+}
+
+.submitting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1080px;
+    color: #434343;
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    &__loader {
+        display: block;
+        margin: 0 auto;
+    }
+}

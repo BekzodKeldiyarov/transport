@@ -1,4 +1,7 @@
-$().ready(function(){
+$().ready(function () {
+    $.validator.addMethod("valueNotEquals", function (value, element, arg) {
+        return arg !== value;
+    }, "Please select an item!");
     $('#return-application-form').validate({
         rules: {
             socialSecuryNumber: {
@@ -23,52 +26,97 @@ $().ready(function(){
                 required: true,
                 minlength: 2
             },
-            applicantMiddleName:{
+            applicantMiddleName: {
                 required: true,
                 minlength: 2
             },
-            applicantLastName:{
+            applicantLastName: {
                 required: true,
                 minlength: 2,
                 number: false
             },
-            // applicantSuffix: {
-            //     required: true,
-            //     SelectName: { valueNotEquals: "" }
-
-            // },
+            applicantSuffix: {
+                valueNotEquals: "default"
+            },
             repeatSocialsecuritynumber: {
                 required: true,
                 minlength: 6,
                 equalTo: "#social-security-number"
             },
-            applicantEmail:{
+            applicantEmail: {
                 required: true,
                 email: true
             },
-            // applicantTwicCard:{
-            //     required: true,
-            //     SelectName: { valueNotEquals: "" }
-            // },
-            // applicantPassport:{
-            //     required: true,
-            //     SelectName: { valueNotEquals: "" }
-            // }
-            driverFirstName:{
+            applicantTwicCard: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            applicantPassport: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            driverFirstName: {
                 required: true,
                 minlength: 2
             },
-            driverLastName:{
+            driverLastName: {
                 required: true,
                 minlength: 2
+            },
+            driverLicenceState: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            driverLicenceCountry: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            driverLicenceClass: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            driverLicenceNumber: {
+                required: true
+            },
+            repeatDriverLicenceNumber: {
+                required: true,
+                equalTo: "#driver-licence-number"
+            },
+            medicalCertificateExpires:{
+                required: true
             }
         },
         messages: {
             socialSecurityNumber: "Please enter the social security number",
             repeatSocialsecuritynumber: "Repeat the social security number",
+            applicantSuffix: {
+                valueNotEquals: "Please select an item!"
+            }
         }
     });
 
+    $('#upload-driver-licence').validate({
+        rules: {
+            frontOfDriverLicense: {
+                required: true,
+                accept: 'png|jpg|gif'
+            },
+            backOfDriverLicense: {
+                required: true,
+                accept: 'png|jpg|gif'
+            }
+        },
+        messages: {
+            frontOfDriverLicense: {
+                required: "You must select the file(s) to upload.",
+                accept: "Only formats png, jpg, gif"
+            },
+            backOfDriverLicense: {
+                required: "You must select the file(s) to upload.",
+                accept: "Only formats png, jpg, gif"
+            }
+        }
+    })
 
     $("#social-security-number").inputmask({
         "mask": "999-99-9999"
@@ -79,7 +127,21 @@ $().ready(function(){
 
 
 
-    
+
+
+
+    $contact = $("#acceptance-button");
+    $close = $("#cancel-sign-document-button");
+    $overlay = $(".popup-overlay");
+    $contact.on('click', function () {
+        console.log("bekzod");
+        $('.popup').fadeIn();
+        $overlay.toggleClass("overlay");
+    })
+
+    $close.on('click', function () {
+        $('.popup').fadeOut();
+        $overlay.toggleClass("overlay");
+    })
 
 })
-

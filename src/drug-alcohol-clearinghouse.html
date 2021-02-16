@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/upload.min.css">
 </head>
 
-<body>
+<body style="position: relative">
     <div class="container">
         <div class="row form-header">
             <div class="form-logo-wrapper col-md-4">
@@ -23,42 +23,56 @@
         </div>
         <div class="row">
             <div class="upload__wrapper col-md-8">
-                <div class="upload upload-driver-licence ">
+                <div class="upload upload-violation">
                     <h2 class="upload__title">
-                        Upload Driver License Copy <span class="upload-driver-licence-number"> 123123123</span>
+                        General Consent for Limited Queries of the Federal Motor Carrier Safety Administration (FMCSA)
+                        Drug and Alcohol Clearinghouse
                     </h2>
-                    <p class="upload__intro"> Please upload a copy of the driver’s license specified above. (Supported
-                        Formats:
-                        .jpg, .png, .gif)</p>
-                    <form action="" class="upload-driver-licence" id="upload-driver-licence">
+                    <p class="upload__intro">
+                        I, <span class="full-name">Ivan Ivanov Jr</span> hereby provide consent to MK Freight Inc to
+                        conduct a
+                        limited query of the FMCSA Commercial Driver’s License Drug and Alcohol Clearinghouse
+                        (Clearinghouse) to determine whether drug or alcohol violation information about me exists in
+                        the Clearinghouse.
+                        <br><br>
+                        I am consenting to multiple unlimited queries and for the duration of employment with MK Freight
+                        Inc.
+                        <br><br>
+                        I understand that if the limited query conducted by MK Freight Inc indicates that drug or
+                        alcohol violation information about me exists in the Clearinghouse, FMCSA will not disclose that
+                        information to MK Freight Inc without first obtaining additional specific consent from me.
+                        <br><br>
+                        I further understand that if I refuse to provide consent for MK Freight Inc to conduct a limited
+                        query of the Clearinghouse, MK Freight Inc must prohibit me from performing safety-sensitive
+                        functions, including driving a commercial motor vehicle, as required by FMCSA’s drug and alcohol
+                        program regulations.
 
-                        <ul class="upload__list">
-                            <li class="upload__item">
-                                <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>FRONT</strong> copy of your driver license
-                                </p>
-                                <input type="file" class="form-control" required name="frontOfDriverLicense">
-                            </li>
-                            <li class="upload__item">
-                                <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>BACK</strong> copy of your driver license
-                                </p>
-                                <input type="file" class="form-control" name="backOfDriverLicense">
-                            </li>
-                        </ul>
-                        <button class="btn btn-primary" type="submit">
-                            Upload File(s)
-                        </button>
+                    </p>
+                    <hr>
+                    <form action="" class="upload-form" id="upload-violation">
+                        <fieldset class="acceptance">
+                            <ul class="acceptance__list row mt-2">
+                                <li class="acceptance__item col-md-8">
+                                    <button class="btn acceptance__button form-control mb-1" id="acceptance-button"
+                                        type="button">
+                                    </button>
+                                    <label for="acceptance-button">Prospective Employee Signature </label>
+                                </li>
+                                <li class="acceptance__item col-md-4">
+                                    <input type="date" class="form-control mb-1" id="acceptance-date-signed"
+                                        name="acceptance-date-signed">
+                                    <label for="acceptance-date-signed">Date Signed</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </form>
                     <div class="row">
-                        <a href="./applicant.html" class="btn btn-secondary mt-2 col-md-2 ">
+                        <a href="./psp-driver-auth.html" class="btn btn-secondary mt-2 col-md-2 ">
                             Back
                         </a>
-                        <button class="btn btn-secondary mt-2 col-md-2  offset-md-1">
+                        <a href="./testing-policy.html"
+                            class="btn btn-secondary mt-2 col-md-2  offset-md-1">
                             Continue
-                        </button>
-                        <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 offset-md-5">
-                            Skip
                         </a>
                     </div>
 
@@ -69,7 +83,7 @@
                     Application Process
                 </h2>
                 <ul class="application__process__list">
-                    <li class="application__process__item application__process__item-done ">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Application For Employment
                         </h3>
@@ -77,7 +91,7 @@
                             Your general application information
                         </p>
                     </li>
-                    <li class="application__process__item application__process__item-active">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Driver License Copy
                         </h3>
@@ -85,7 +99,7 @@
                             Provide a photo copy of your driver license.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Medical Card Copy
                         </h3>
@@ -93,7 +107,7 @@
                             Provide a photo copy of your medical card.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Forfeiture Documents
                         </h3>
@@ -101,7 +115,7 @@
                             Your violations & annual review agreement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Alcohol & Drug Test Statement
                         </h3>
@@ -109,7 +123,7 @@
                             Your alcohol & drug testing history statement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Safety Performance History Investigation
                         </h3>
@@ -117,7 +131,7 @@
                             Previous employer investigation agreement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             PSP Driver Authorization
                         </h3>
@@ -125,7 +139,7 @@
                             Authorization to run DOT PSP report.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-active">
                         <h3 class="application__process__name">
                             Drug & Alcohol Clearinghouse Consent
                         </h3>
@@ -162,6 +176,24 @@
             </div>
         </div>
     </div>
+
+    <section class="sign-document popup">
+        <div class="container">
+            <h2 class="subtitle">Sign Document</h2>
+            <p class="sign-document-important">Document: Drug & Alcohol Clearinghouse Consent</p>
+            <p class="sign-document-descr">
+                This document is used to consent to a Limited Query of the FMCSA Drug & Alcohol Clearinghouse.
+            </p>
+            <p class="sign-document-important">Signature: Employee Signature</p>
+            <p class="sign-document-descr">
+                The signature of the employee consenting to the Limited Query FMCSA Drug & Alcohol Clearinghouse report.
+            </p>
+            <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
+            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+        </div>
+    </section>
+
+    <div class="popup-overlay"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"

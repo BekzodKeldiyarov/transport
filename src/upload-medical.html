@@ -25,25 +25,17 @@
             <div class="upload__wrapper col-md-8">
                 <div class="upload upload-driver-licence ">
                     <h2 class="upload__title">
-                        Upload Driver License Copy <span class="upload-driver-licence-number"> 123123123</span>
-                    </h2>
+                        Please scan and upload a copy of your medical card. (Supported Formats: .jpg, .png, .gif)</h2>
                     <p class="upload__intro"> Please upload a copy of the driver’s license specified above. (Supported
                         Formats:
                         .jpg, .png, .gif)</p>
                     <form action="" class="upload-driver-licence" id="upload-driver-licence">
-
                         <ul class="upload__list">
                             <li class="upload__item">
                                 <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>FRONT</strong> copy of your driver license
+                                    Please select the file(s) to upload.
                                 </p>
                                 <input type="file" class="form-control" required name="frontOfDriverLicense">
-                            </li>
-                            <li class="upload__item">
-                                <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>BACK</strong> copy of your driver license
-                                </p>
-                                <input type="file" class="form-control" name="backOfDriverLicense">
                             </li>
                         </ul>
                         <button class="btn btn-primary" type="submit">
@@ -51,13 +43,13 @@
                         </button>
                     </form>
                     <div class="row">
-                        <a href="./applicant.html" class="btn btn-secondary mt-2 col-md-2 ">
+                        <a href="./upload.html" class="btn btn-secondary mt-2 col-md-2 ">
                             Back
                         </a>
                         <button class="btn btn-secondary mt-2 col-md-2  offset-md-1">
                             Continue
                         </button>
-                        <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 offset-md-5">
+                        <a href="./upload-violation.html" class="btn btn-secondary mt-2 col-md-2 offset-md-5">
                             Skip
                         </a>
                     </div>
@@ -77,7 +69,7 @@
                             Your general application information
                         </p>
                     </li>
-                    <li class="application__process__item application__process__item-active">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Driver License Copy
                         </h3>
@@ -85,7 +77,7 @@
                             Provide a photo copy of your driver license.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-active">
                         <h3 class="application__process__name">
                             Upload Medical Card Copy
                         </h3>

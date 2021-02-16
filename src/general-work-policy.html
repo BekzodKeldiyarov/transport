@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/upload.min.css">
 </head>
 
-<body>
+<body style="position: relative">
     <div class="container">
         <div class="row form-header">
             <div class="form-logo-wrapper col-md-4">
@@ -23,42 +23,54 @@
         </div>
         <div class="row">
             <div class="upload__wrapper col-md-8">
-                <div class="upload upload-driver-licence ">
+                <div class="upload upload-violation">
                     <h2 class="upload__title">
-                        Upload Driver License Copy <span class="upload-driver-licence-number"> 123123123</span>
+                        General Work Policy
                     </h2>
-                    <p class="upload__intro"> Please upload a copy of the driver’s license specified above. (Supported
-                        Formats:
-                        .jpg, .png, .gif)</p>
-                    <form action="" class="upload-driver-licence" id="upload-driver-licence">
+                    <p class="upload__intro">
+                        Please review the company general work policy below. Once finished, electronically sign to
+                        confirm receipt, understanding and agree. Upon completion of the online application, you will be
+                        emailed a copy of this policy. You may also click the <strong>Download</strong> button in the
+                        top right corner of the viewer to save a copy of the policy now.
 
-                        <ul class="upload__list">
-                            <li class="upload__item">
-                                <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>FRONT</strong> copy of your driver license
-                                </p>
-                                <input type="file" class="form-control" required name="frontOfDriverLicense">
-                            </li>
-                            <li class="upload__item">
-                                <p class="upload__name m-0 mb-1">
-                                    Please upload the <strong>BACK</strong> copy of your driver license
-                                </p>
-                                <input type="file" class="form-control" name="backOfDriverLicense">
-                            </li>
-                        </ul>
-                        <button class="btn btn-primary" type="submit">
-                            Upload File(s)
-                        </button>
+                    </p>
+                    <!-- <iframe
+                        src="https://docs.google.com/viewer?url=https://drive.google.com/file/d/1wKgrEjQ-rkONTuzK-VL_lX88gtpd28-d/view?usp=sharing"
+                        frameborder="0" height="500px" width="100%">
+                    </iframe> -->
+                    <!-- <embed src="./files/company_alcohol_and_drug_testing_policy.pdf" width="600" height="500" alt="pdf"
+                        pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I have read, fully understand and agree to all terms as set forth in the company general
+                            work policy.
+                        </label>
+                    </div>
+                    <form action="" class="upload-form" id="upload-violation">
+                        <fieldset class="acceptance">
+                            <ul class="acceptance__list row mt-2">
+                                <li class="acceptance__item col-md-8">
+                                    <button class="btn acceptance__button form-control mb-1" id="acceptance-button"
+                                        type="button">
+                                    </button>
+                                    <label for="acceptance-button">Prospective Employee Signature </label>
+                                </li>
+                                <li class="acceptance__item col-md-4">
+                                    <input type="date" class="form-control mb-1" id="acceptance-date-signed"
+                                        name="acceptance-date-signed">
+                                    <label for="acceptance-date-signed">Date Signed</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </form>
                     <div class="row">
-                        <a href="./applicant.html" class="btn btn-secondary mt-2 col-md-2 ">
+                        <a href="./testing-policy.html" class="btn btn-secondary mt-2 col-md-2 ">
                             Back
                         </a>
-                        <button class="btn btn-secondary mt-2 col-md-2  offset-md-1">
-                            Continue
-                        </button>
-                        <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 offset-md-5">
-                            Skip
+                        <a href="./submitting.html" class="btn btn-secondary mt-2 col-md-3  offset-md-1">
+                            Submit Application
                         </a>
                     </div>
 
@@ -69,7 +81,7 @@
                     Application Process
                 </h2>
                 <ul class="application__process__list">
-                    <li class="application__process__item application__process__item-done ">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Application For Employment
                         </h3>
@@ -77,7 +89,7 @@
                             Your general application information
                         </p>
                     </li>
-                    <li class="application__process__item application__process__item-active">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Driver License Copy
                         </h3>
@@ -85,7 +97,7 @@
                             Provide a photo copy of your driver license.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Medical Card Copy
                         </h3>
@@ -93,7 +105,7 @@
                             Provide a photo copy of your medical card.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Upload Forfeiture Documents
                         </h3>
@@ -101,7 +113,7 @@
                             Your violations & annual review agreement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Alcohol & Drug Test Statement
                         </h3>
@@ -109,7 +121,7 @@
                             Your alcohol & drug testing history statement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Safety Performance History Investigation
                         </h3>
@@ -117,7 +129,7 @@
                             Previous employer investigation agreement.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             PSP Driver Authorization
                         </h3>
@@ -125,7 +137,7 @@
                             Authorization to run DOT PSP report.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Drug & Alcohol Clearinghouse Consent
                         </h3>
@@ -133,7 +145,7 @@
                             Authorization for Drug & Alcohol Clearinghouse.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-done">
                         <h3 class="application__process__name">
                             Alcohol & Drug Testing Policy
                         </h3>
@@ -141,7 +153,7 @@
                             Review employer's alcohol & drug testing policy.
                         </p>
                     </li>
-                    <li class="application__process__item">
+                    <li class="application__process__item application__process__item-active">
                         <h3 class="application__process__name">
                             General Work Policy
                         </h3>
@@ -162,6 +174,26 @@
             </div>
         </div>
     </div>
+
+    <section class="sign-document popup">
+        <div class="container">
+            <h2 class="subtitle">Sign Document</h2>
+            <p class="sign-document-important">Document: General Work Policy Receipt</p>
+            <p class="sign-document-descr">
+                This document is used to confirm a prospective employee has received, understands and agrees to the
+                prospective employer's General Work Policy.
+            </p>
+            <p class="sign-document-important">Signature: Prospective Employee Signature</p>
+            <p class="sign-document-descr">
+                The signature of the prospective employee confirming receipt of and agreeing to the company's General
+                Work Policy.
+            </p>
+            <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
+            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+        </div>
+    </section>
+
+    <div class="popup-overlay"></div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
