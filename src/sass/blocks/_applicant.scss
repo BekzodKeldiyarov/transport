@@ -180,3 +180,9 @@
     z-index: 1;
     background-color: rgba(0,0,0,.6);
 }
+
+
+input[type="radio"].form-check-input.error{
+  padding: 0;
+  align-self: center;
+}

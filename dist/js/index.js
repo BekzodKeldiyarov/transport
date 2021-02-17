@@ -2,6 +2,19 @@ $().ready(function () {
     $.validator.addMethod("valueNotEquals", function (value, element, arg) {
         return arg !== value;
     }, "Please select an item!");
+
+    jQuery.validator.addMethod("greaterThan",
+        function (value, element, params) {
+
+            if (!/Invalid|NaN/.test(new Date(value))) {
+                return new Date(value) > new Date($(params).val());
+            }
+
+            return isNaN(value) && isNaN($(params).val())
+                || (Number(value) > Number($(params).val()));
+        }, 'Must be greater than date from.');
+
+
     $('#return-application-form').validate({
         rules: {
             socialSecuryNumber: {
@@ -88,23 +101,88 @@ $().ready(function () {
             signDocumentSocialSecurityNumber: {
                 required: true
             },
+            straightTruck: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            straightTruckDateTo: {
+                greaterThan: "#straight-truck-date-from"
+            },
+            truckTractor: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            truckTractorDateTo: {
+                greaterThan: "#truck-tractor-date-from"
+            },
+            semiTrailers: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            semiTrailersDateTo: {
+                greaterThan: "#semi-trailers-date-from"
+            },
+            doublesTriples: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            doublesDateTo: {
+                greaterThan: "#doubles-date-from"
+            },
+            flatbed: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            flatbedDateTo: {
+                greaterThan: "#flatbed-date-from"
+            },
+            bus: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            busDateTo: {
+                greaterThan: "#bus-date-from"
+            },
+            other: {
+                required: true,
+                valueNotEquals: "default"
+            },
+            otherDateTo: {
+                greaterThan: "#other-date-from"
+            },
+
+            accidentAnswer: {
+                required: true
+            },
+            violationAnswer: {
+                required: true
+            },
+            employerDateTo: {
+                greaterThan: "#employer-date-from"
+            }
 
         },
         messages: {
             socialSecurityNumber: "Please enter the social security number",
             repeatSocialsecuritynumber: "Repeat the social security number",
-            applicantSuffix: {
-                valueNotEquals: "Please select an item!"
+            applicantSuffix:
+                {
+                    valueNotEquals: "Please select an item!"
+                }
+        },
+        errorPlacement: function (error, element) {
+            if (element.is(":radio")) {
+                error.appendTo(element.parents('.form-check-wrapper'));
+            } else { // This is the default behavior
+                error.insertAfter(element);
             }
         }
-    });
+    })
+    ;
 
     $('#upload-driver-licence').validate({
         rules: {
-            frontOfDriverLicense: {
-                required: true,
-                accept: 'png|jpg|gif'
-            },
+            frontOfDriverLicense: {},
             backOfDriverLicense: {
                 required: true,
                 accept: 'png|jpg|gif'
@@ -119,6 +197,111 @@ $().ready(function () {
                 required: "You must select the file(s) to upload.",
                 accept: "Only formats png, jpg, gif"
             }
+        }
+    })
+
+    $('#upload-medical-card').validate({
+        rules: {
+            medicalCardPhoto: {
+                required: true,
+                accept: 'png|jpg|gif'
+            }
+        },
+        messages: {
+            medicalCardPhoto: {
+                required: "You must select the file(s) to upload.",
+                accept: "Only formats png, jpg, gif"
+            }
+        }
+    });
+
+    $('#upload-violation-sign-form').validate({
+        rules: {
+            uploadViolationDriverFullName: {
+                required: true,
+                min: 2
+            },
+            signDocumentSocialSecurityNumber: {
+                required: true
+            },
+            repeatSignDocumentSocialSecurityNumber: {
+                required: true,
+                equalTo: "#violation-sign-document-social-security-number"
+            },
+            signDocumentBirthDate: {
+                required: true
+            },
+            repeatSignDocumentBirthDate: {
+                required: true,
+                equalTo: ""
+            }
+
+        }
+    })
+
+    $('#alcohol-drug-test-form').validate({
+        rules: {
+            alcoholDrugTest1: {
+                required: true
+            },
+            alcoholDrugTest2: {
+                required: true
+            }
+        },
+        errorPlacement: function (error, element) {
+            if (element.is(":radio")) {
+                error.appendTo(element.parents('.form-check-wrapper'));
+            } else { // This is the default behavior
+                error.insertAfter(element);
+            }
+        }
+    })
+    $('#safety-sign-document-form').validate({
+        rules: {
+            uploadViolationDriverFullName: {
+                required: true,
+                min: 2
+            },
+            signDocumentSocialSecurityNumber: {
+                required: true
+            },
+            safetyRepeatSignDocumentSocialSecurityNumber: {
+                required: true,
+                equalTo: '#safety-sign-document-social-security-number'
+            },
+            signDocumentBirthDate: {
+                required: true
+            },
+            repeatSafetySignDocumentBirthDate: {
+                required: true,
+                equalTo: "#safety-sign-document-birth-date"
+            }
+
+        }
+    })
+
+    $('#testing-policy-sign-document').validate({
+        rules: {
+            testingPolicyFullName: {
+                required: true,
+                min: 2
+            },
+            testingPolicySocialSecurityNumber: {
+                required: true
+            },
+            repeatTestingPolicySocialSecurityNumber: {
+                required: true,
+                equalTo: "#testing-policy-sign-document-social-security-number"
+            },
+            testingPolicyBirthDate: {
+                required: true
+            },
+            repeatTestingPolicyBirthDate: {
+                required: true,
+                equalTo: "#testing-policy-sign-document-birth-date"
+            }
+
+
         }
     })
 
@@ -134,16 +317,42 @@ $().ready(function () {
         }
     })
 
+    $('#new-application-form').validate({
+        rules: {
+            socialSecurityNumber: {
+                required: true
+            },
+            repeatSocialSecurityNumber: {
+                required: true,
+                equalTo: '#social-security-number'
+            },
+            howDidYouHear: {
+                required: true
+            }
+        }
+    })
+
+    $('#return-application-form').validate({
+        rules: {
+            socialSecurityNumber: {
+                required: true
+            },
+            repeatSocialSecurityNumber: {
+                required: true,
+                equalTo: '#social-security-number'
+            },
+            howDidYouHear: {
+                required: true
+            }
+        }
+    })
+
     $(".social-security-number").inputmask({
         "mask": "999-99-9999"
     });
-    $("#applicant-phone-number, #applicant-alt-number").inputmask({
+    $("#applicant-phone-number, #applicant-alt-number, #employer-phone-number").inputmask({
         "mask": "(999) 999-99-9999"
     })
-
-
-
-
 
 
     $contact = $("#acceptance-button");

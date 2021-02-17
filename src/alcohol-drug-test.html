@@ -7,237 +7,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/upload.min.css">
 </head>
 
 <body style="position: relative">
-    <div class="container">
-        <div class="row form-header">
-            <div class="form-logo-wrapper col-md-4">
-                <img src="./img/form-logo.png" alt="" class="form-logo">
-            </div>
-            <h1 class="form-initial__title title col-md-4">
-                Application Form
-            </h1>
+<div class="container">
+    <div class="row form-header">
+        <div class="form-logo-wrapper col-md-4">
+            <img src="./img/form-logo.png" alt="" class="form-logo">
         </div>
-        <div class="row">
-            <div class="upload__wrapper col-md-8">
-                <div class="upload upload-violation">
-                    <h2 class="upload__title">
-                        Pre-Employment Employee Alcohol & Drug Test Statement
-                    </h2>
-                    <p class="upload__intro"> 49 CFR Part 40.25(j) states, as the employer, you must ask the employee
-                        whether he or she has tested positive, or refused to test, on any pre-employment drug or alcohol
-                        test administered by an employer to which the employee applied for, but did not obtain,
-                        safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules during
-                        the past two years. If the employee admits that he or she had a positive test or a refusal to
-                        test, you must not use the employee to perform safety-sensitive functions for you, until and
-                        unless the employee documents successful completion of the return-to-duty process required in 49
-                        CFR Subpart O.</p>
-                    <hr>
-                    <form action="" class="upload-form" id="upload-violation">
-                        <ol class="alcohol-drug-test__list">
-                            <li class="alcohol-drug-test__item">
-                                <p class="alcohol-drug-test__intro">
-                                    Tested positive, or refused to test, on any pre-employment drug or alcohol test
-                                    administered by an employer to which the employee applied for, but did not obtain,
-                                    safety-sensitive transportation work covered by DOT agency drug and alcohol testing
-                                    rules during the past two years.
-                                </p>
+        <h1 class="form-initial__title title col-md-4">
+            Application Form
+        </h1>
+    </div>
+    <div class="row">
+        <div class="upload__wrapper col-md-8">
+            <div class="upload upload-violation">
+                <h2 class="upload__title">
+                    Pre-Employment Employee Alcohol & Drug Test Statement
+                </h2>
+                <p class="upload__intro"> 49 CFR Part 40.25(j) states, as the employer, you must ask the employee
+                    whether he or she has tested positive, or refused to test, on any pre-employment drug or alcohol
+                    test administered by an employer to which the employee applied for, but did not obtain,
+                    safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules during
+                    the past two years. If the employee admits that he or she had a positive test or a refusal to
+                    test, you must not use the employee to perform safety-sensitive functions for you, until and
+                    unless the employee documents successful completion of the return-to-duty process required in 49
+                    CFR Subpart O.</p>
+                <hr>
+                <form action="" class="upload-form" id="alcohol-drug-test-form">
+                    <ol class="alcohol-drug-test__list">
+                        <li class="alcohol-drug-test__item">
+                            <p class="alcohol-drug-test__intro">
+                                Tested positive, or refused to test, on any pre-employment drug or alcohol test
+                                administered by an employer to which the employee applied for, but did not obtain,
+                                safety-sensitive transportation work covered by DOT agency drug and alcohol testing
+                                rules during the past two years.
+                            </p>
+                            <div class="form-check-wrapper">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="alcoholDrugTest1"
-                                        id="alcoholDrugTest1-yes">
+                                           id="alcoholDrugTest1-yes">
                                     <label class="form-check-label" for="alcoholDrugTest1-yes">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="alcoholDrugTest1"
-                                        id="alcoholDrugTest1-no">
+                                           id="alcoholDrugTest1-no">
                                     <label class="form-check-label" for="alcoholDrugTest1-no">
                                         No
                                     </label>
                                 </div>
-                            </li>
-                            <li class="alcohol-drug-test__item">
-                                <p class="alcohol-drug-test__intro">
-                                    If you answered yes to the above question, can you provide documentation of
-                                    successful completion of DOT return-to-duty requirements (including follow-up
-                                    tests).
-                                </p>
+                            </div>
+                        </li>
+                        <li class="alcohol-drug-test__item">
+                            <p class="alcohol-drug-test__intro">
+                                If you answered yes to the above question, can you provide documentation of
+                                successful completion of DOT return-to-duty requirements (including follow-up
+                                tests).
+                            </p>
+                            <div class="form-check-wrapper">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="alcoholDrugTest2"
-                                        id="flexRadioDefault2-yes">
+                                           id="flexRadioDefault2-yes">
                                     <label class="form-check-label" for="flexRadioDefault2-yes">
                                         Yes
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="alcoholDrugTest2"
-                                        id="flexRadioDefault2-no">
+                                           id="flexRadioDefault2-no">
                                     <label class="form-check-label" for="flexRadioDefault2-no">
                                         No
                                     </label>
                                 </div>
-                            </li>
-                        </ol>
-                        <fieldset class="acceptance">
-                            <ul class="acceptance__list row mt-2">
-                                <li class="acceptance__item col-md-8">
-                                    <button class="btn acceptance__button form-control mb-1" id="acceptance-button"
+                            </div>
+                        </li>
+                    </ol>
+                    <fieldset class="acceptance">
+                        <ul class="acceptance__list row mt-2">
+                            <li class="acceptance__item col-md-8">
+                                <button class="btn acceptance__button form-control mb-1" id="acceptance-button"
                                         type="button">
-                                    </button>
-                                    <label for="acceptance-button">Prospective Employee Signature </label>
-                                </li>
-                                <li class="acceptance__item col-md-4">
-                                    <input type="date" class="form-control mb-1" id="acceptance-date-signed"
-                                        name="acceptance-date-signed">
-                                    <label for="acceptance-date-signed">Date Signed</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </form>
-                    <div class="row">
-                        <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 ">
-                            Back
-                        </a>
-                        <a href="./safety-performance.html" class="btn btn-secondary mt-2 col-md-2  offset-md-1">
-                            Continue
-                        </a>
-                    </div>
-
+                                </button>
+                                <label for="acceptance-button">Prospective Employee Signature </label>
+                            </li>
+                            <li class="acceptance__item col-md-4">
+                                <input type="date" class="form-control mb-1" id="acceptance-date-signed"
+                                       name="acceptance-date-signed">
+                                <label for="acceptance-date-signed">Date Signed</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <div class="row">
+                    <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 ">
+                        Back
+                    </a>
+                    <a href="./safety-performance.html" class="btn btn-secondary mt-2 col-md-2  offset-md-1">
+                        Continue
+                    </a>
                 </div>
+
             </div>
-            <div class="application__process col-md-4">
-                <h2 class="title">
-                    Application Process
-                </h2>
-                <ul class="application__process__list">
-                    <li class="application__process__item application__process__item-done">
-                        <h3 class="application__process__name">
-                            Application For Employment
-                        </h3>
-                        <p class="application__process__text">
-                            Your general application information
-                        </p>
-                    </li>
-                    <li class="application__process__item application__process__item-done">
-                        <h3 class="application__process__name">
-                            Upload Driver License Copy
-                        </h3>
-                        <p class="application__process__text">
-                            Provide a photo copy of your driver license.
-                        </p>
-                    </li>
-                    <li class="application__process__item application__process__item-done">
-                        <h3 class="application__process__name">
-                            Upload Medical Card Copy
-                        </h3>
-                        <p class="application__process__text">
-                            Provide a photo copy of your medical card.
-                        </p>
-                    </li>
-                    <li class="application__process__item application__process__item-done">
-                        <h3 class="application__process__name">
-                            Upload Forfeiture Documents
-                        </h3>
-                        <p class="application__process__text application__process__item-done">
-                            Your violations & annual review agreement.
-                        </p>
-                    </li>
-                    <li class="application__process__item application__process__item-active">
-                        <h3 class="application__process__name">
-                            Alcohol & Drug Test Statement
-                        </h3>
-                        <p class="application__process__text">
-                            Your alcohol & drug testing history statement.
-                        </p>
-                    </li>
-                    <li class="application__process__item">
-                        <h3 class="application__process__name">
-                            Safety Performance History Investigation
-                        </h3>
-                        <p class="application__process__text">
-                            Previous employer investigation agreement.
-                        </p>
-                    </li>
-                    <li class="application__process__item">
-                        <h3 class="application__process__name">
-                            PSP Driver Authorization
-                        </h3>
-                        <p class="application__process__text">
-                            Authorization to run DOT PSP report.
-                        </p>
-                    </li>
-                    <li class="application__process__item">
-                        <h3 class="application__process__name">
-                            Drug & Alcohol Clearinghouse Consent
-                        </h3>
-                        <p class="application__process__text">
-                            Authorization for Drug & Alcohol Clearinghouse.
-                        </p>
-                    </li>
-                    <li class="application__process__item">
-                        <h3 class="application__process__name">
-                            Alcohol & Drug Testing Policy
-                        </h3>
-                        <p class="application__process__text">
-                            Review employer's alcohol & drug testing policy.
-                        </p>
-                    </li>
-                    <li class="application__process__item">
-                        <h3 class="application__process__name">
-                            General Work Policy
-                        </h3>
-                        <p class="application__process__text">
-                            Review employer's general work policy.
-                        </p>
-                    </li>
-                </ul>
-                <div class="save-finish-later">
-                    <h3 class="save-finish-later__title">
-                        Save & Finish Later
+        </div>
+        <div class="application__process col-md-4">
+            <h2 class="title">
+                Application Process
+            </h2>
+            <ul class="application__process__list">
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Application For Employment
                     </h3>
                     <p class="application__process__text">
-                        Your application is not sent or visible to the employer until it is 100% complete.
+                        Your general application information
                     </p>
-                    <button class="btn btn-secondary mt-3">Save & Finish Later</button>
-                </div>
+                </li>
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Upload Driver License Copy
+                    </h3>
+                    <p class="application__process__text">
+                        Provide a photo copy of your driver license.
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Upload Medical Card Copy
+                    </h3>
+                    <p class="application__process__text">
+                        Provide a photo copy of your medical card.
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Upload Forfeiture Documents
+                    </h3>
+                    <p class="application__process__text application__process__item-done">
+                        Your violations & annual review agreement.
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-active">
+                    <h3 class="application__process__name">
+                        Alcohol & Drug Test Statement
+                    </h3>
+                    <p class="application__process__text">
+                        Your alcohol & drug testing history statement.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Safety Performance History Investigation
+                    </h3>
+                    <p class="application__process__text">
+                        Previous employer investigation agreement.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        PSP Driver Authorization
+                    </h3>
+                    <p class="application__process__text">
+                        Authorization to run DOT PSP report.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Drug & Alcohol Clearinghouse Consent
+                    </h3>
+                    <p class="application__process__text">
+                        Authorization for Drug & Alcohol Clearinghouse.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Alcohol & Drug Testing Policy
+                    </h3>
+                    <p class="application__process__text">
+                        Review employer's alcohol & drug testing policy.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        General Work Policy
+                    </h3>
+                    <p class="application__process__text">
+                        Review employer's general work policy.
+                    </p>
+                </li>
+            </ul>
+            <div class="save-finish-later">
+                <h3 class="save-finish-later__title">
+                    Save & Finish Later
+                </h3>
+                <p class="application__process__text">
+                    Your application is not sent or visible to the employer until it is 100% complete.
+                </p>
+                <button class="btn btn-secondary mt-3">Save & Finish Later</button>
             </div>
         </div>
     </div>
+</div>
 
-    <section class="sign-document popup">
-        <div class="container">
-            <h2 class="subtitle">Sign Document</h2>
-            <p class="sign-document-important">Document: Pre-Employment Employee Alcohol & Drug Test Statement</p>
-            <p class="sign-document-descr">
-                This document ensures compliance with DOT regulation 49 CFR Part 40.25(j) in that the employer asks the
-                prospective employee about their alcohol and drug test history.
-            </p>
-            <p class="sign-document-important">Signature: Prospective Employee Signature</p>
-            <p class="sign-document-descr">
-                The signature of the prospective employee completing the document.
-            </p>
-            <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
-            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
-        </div>
-    </section>
+<section class="sign-document popup">
+    <div class="container">
+        <h2 class="subtitle">Sign Document</h2>
+        <p class="sign-document-important">Document: Pre-Employment Employee Alcohol & Drug Test Statement</p>
+        <p class="sign-document-descr">
+            This document ensures compliance with DOT regulation 49 CFR Part 40.25(j) in that the employer asks the
+            prospective employee about their alcohol and drug test history.
+        </p>
+        <p class="sign-document-important">Signature: Prospective Employee Signature</p>
+        <p class="sign-document-descr">
+            The signature of the prospective employee completing the document.
+        </p>
+        <button class="btn btn-primary" id="sign-document-button" type="button">Sign Document</button>
+        <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+    </div>
+</section>
 
-    <div class="popup-overlay"></div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+<div class="popup-overlay"></div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
-    </script>
-    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/additional-methods.min.js"></script>
-    <script src="./js/index.js"></script>
+</script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/additional-methods.min.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>
