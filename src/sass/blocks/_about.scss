@@ -1,5 +1,5 @@
 .about {
-    padding: 80px 0;
+    padding: 20px 0;
 
     &__title {
         text-align: center;
@@ -68,4 +68,78 @@
 
 
 
+}
+
+@media(min-width: 992px) {
+    .about {
+        padding: 80px 0;
+
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &__subtitle {
+            text-align: left;
+        }
+
+        .row {
+            justify-content: space-around;
+        }
+
+        &__milestone {
+            &__list {
+                list-style: none;
+                padding: 0;
+            }
+
+            &__item {
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 5px;
+
+                &::before,
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -1px;
+                    background-color: rgb(46, 149, 87);
+                    transform: rotate(-45deg);
+                }
+
+                &::before {
+                    // top: 10px;
+                    width: 10px;
+                    margin-top: 2px;
+                    margin-left: -4px;
+                    transform: rotate(45deg);
+                }
+
+            }
+        }
+
+        &__gallery {
+            margin-top: 30px;
+
+            &__list {
+                list-style: none;
+                padding: 0;
+
+            }
+
+            &__item {
+                min-height: 300px;
+                border: 1px solid red;
+                background-color: #eee;
+            }
+
+        }
+
+
+
+    }
 }

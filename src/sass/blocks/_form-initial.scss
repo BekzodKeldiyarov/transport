@@ -1,44 +1,82 @@
 .form-initial {
-    padding: 80px 0;
-    &__title {
-        text-align: center;
-        margin-left: auto;
-        align-self: center;
+  padding: 80px 0;
+
+  &__title {
+    text-align: center;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  &-logo-wrapper {
+    img {
+      max-width: 100%;
+      width: 320px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__button {
+    //border: none;
+    //min-height: 50px;
+    //min-width: 260px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    //background-color: #2E9557;
+    //border-radius: 30px;
+    transition: all 0.5s;
+    color: #fff;
+    //border: 3px solid #2E9557;
+    position: relative;
+
+    &:hover {
+      //background-color: #fff;
+      //color: #000;
+      //border: 3px solid #2E9557;
+
+      &::before {
+        background-image: url('./../icons/add_circle_green.png');
+      }
     }
 
-    &-logo-wrapper {
-        img {
-            max-width: 100%;
-            width: 320px;
+    &::before {
+      content: "";
+      width: 96px;
+      height: 96px;
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      margin-left: -48px;
+      transition: all .5s;
+      background-image: url('./../icons/add_circle_grey.png');
+    }
+
+    &-continue {
+      &::before {
+        background-image: url("./../icons/return_circle_grey.png");
+      }
+
+      &:hover {
+        &::before {
+          background-image: url('./../icons/return_circle_green.png');
         }
+      }
     }
 
-    &__list {
-        list-style: none;
-        margin-top: 30px;
-    }
 
-    &__item {
-        text-align: center;
-    }
-
-    &__button {
-        border: none;
-        min-height: 50px;
-        min-width: 260px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 600;
-        background-color: #2E9557;
-        border-radius: 30px;
-        transition: all 0.5s;
-        color: #fff;
-        border: 3px solid #2E9557;
-
-        &:hover {
-            background-color: #fff;
-            color: #000;
-            border: 3px solid #2E9557;
-        }
-    }
+  }
 }

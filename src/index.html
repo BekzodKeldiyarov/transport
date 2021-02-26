@@ -14,7 +14,6 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-
                 <a class="navbar-brand col-md-2" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -30,7 +29,7 @@
                             <a class="nav-link" href="#drive">Drive For Mr</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#service">
+                            <a class="nav-link" href="#services">
                                 Services
                             </a>
                         </li>
@@ -53,7 +52,6 @@
                 </div>
 
             </div>
-
         </nav>
     </header>
 
@@ -67,9 +65,9 @@
             <h2 class="subtitle promo__subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h2>
-            <button class="button button__apply promo__button">
-                Apply Now
-            </button>
+            <a href="./form-initial.html" class="button button__apply promo__button">
+                    Apply Now
+            </a>
         </div>
 
     </section>
@@ -81,7 +79,7 @@
                 drive for mk
             </h2>
             <ul class="drive__list row">
-                <li class="drive__item col-md-3">
+                <li class="drive__item col-md-3 col-10 offset-1 offset-md-0">
                     <div class="drive__name-wrapper">
                         <p class="drive__price">
                             <span class="drive__price-amount">$0</span> / month
@@ -121,7 +119,7 @@
                         Apply Now
                     </button>
                 </li>
-                <li class="drive__item col-md-3">
+                <li class="drive__item col-md-3 col-10 offset-1 offset-md-0">
                     <div class="drive__name-wrapper">
                         <p class="drive__price">
                             <span class="drive__price-amount">$0</span> / month
@@ -161,7 +159,7 @@
                         Apply Now
                     </button>
                 </li>
-                <li class="drive__item col-md-3">
+                <li class="drive__item col-md-3 col-10 offset-1 offset-md-0">
                     <div class="drive__name-wrapper">
                         <p class="drive__price">
                             <span class="drive__price-amount">$0</span> / month
@@ -317,27 +315,26 @@
             </h2>
             <form action="" class="contact__form form">
 
-                <ul class="form__list">
-                    <li class="form__item">
+                <ul class="form__list row">
+                    <li class="form__item offset-1 col-10 col-md-6 col-lg-3 offset-md-0">
                         <input type="text" class="form__input" placeholder="Your Name" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Your Name'">
                     </li>
-                    <li class="form__item">
+                    <li class="form__item offset-1 col-10 col-md-6 col-lg-3 offset-md-0">
                         <input type="phone" class="form__input" placeholder="Your Phone" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Your Phone'">
                     </li>
-                    <li class="form__item">
+                    <li class="form__item offset-1 col-10 col-md-6 col-lg-3 offset-md-0">
                         <input type="email" class="form__input" placeholder="Your Email" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Your Email'">
                     </li>
-                    <li class="form__item">
+                    <li class="form__item col-md-12 col-lg-3">
                         <button type="submit" class="button button__submit">
                             Contact us
                         </button>
                     </li>
 
                 </ul>
-
 
 
             </form>
@@ -417,12 +414,7 @@
         <div class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand col-md-2" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <div class=" navbar-collapse ml-auto">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -476,10 +468,8 @@
                 $("html, body").animate({
                     scrollTop: $(_href).offset().top + "px"
                 });
-                console.log('bekzod');
                 return false;
             });
-
 
 
         });

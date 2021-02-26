@@ -1,0 +1,74 @@
+.application__process {
+
+    &__list {
+        list-style: none;
+        padding: 0;
+
+    }
+
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        margin: 0;
+    }
+
+    &__item {
+        padding: 10px;
+        padding-left: 80px;
+
+        position: relative;
+        // margin-bottom: 10px;
+
+        &-active {
+            background-color: #F3F3F3;
+            border-radius: 10px;
+            border: 1px solid #dddddd;
+        }
+
+
+        &::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            background-image: url(./../icons/checkmark_circle_grey.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            margin-top: -16px;
+            left: 20px;
+        }
+
+        &-done {
+            &::before {
+                content: "";
+                width: 32px;
+                height: 32px;
+                background-image: url(./../icons/checkmark_circle_green.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                margin-top: -16px;
+                left: 20px;
+            }
+        }
+    }
+
+    .save-finish-later {
+        border-top: 1px solid #eee;
+        padding: 20px 0;
+        padding-left: 40px;
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+}
+
+

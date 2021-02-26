@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/upload.min.css">
+</head>
+
+<body style="position: relative">
+<div class="container">
+    <div class="row form-header">
+        <div class="form-logo-wrapper col-md-4">
+            <img src="./img/form-logo.png" alt="" class="form-logo">
+        </div>
+        <h1 class="form-initial__title title col-md-4">
+            Application Form
+        </h1>
+    </div>
+    <div class="row">
+        <div class="upload__wrapper col-md-8">
+            <div class="upload upload-violation">
+                <h2 class="upload__title">
+                    Record of Violations <u>Regarding MN License #<span class="upload-driver-licence-number">
+                                123123123</span></u>
+                </h2>
+                <p class="upload__intro"> I certify that the following is a true and complete list of traffic
+                    violations (other than parking violations) for which I have been convicted or forfeited bond or
+                    collateral during the past 12 months.</p>
+                <form action="" class="upload-form" id="upload-violation">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I have had no violations
+                        </label>
+                    </div>
+                    <fieldset class="violations mb-5">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Location City/State</th>
+                                <th scope="col">Offence</th>
+                                <th scope="col">Vehicle type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input type="date" class="form-control" id="violation-date"
+                                           name="violation-date">
+                                </th>
+                                <td>
+                                    <input type="text" class="form-control" id="violation-city"
+                                           name="violation-city">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="violation-offense"
+                                           name="violation-offense">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" id="violation-vehicle-type"
+                                           name="violation-vehicle-type">
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary">Add Another Violation</button>
+
+                    </fieldset>
+                    <fieldset class="fair-credit">
+                        <legend class="subtitle visually-hidden">
+                            Fair Credit Reporting Act
+                        </legend>
+                        <p class="fair-credit-text">
+                            If no violations are listed above, I certify that I have not been convicted or forfeited
+                            bond or collateral on account of any violation required to be listed during the past 12
+                            months. <br><br>
+                            Pursuant to the federal Fair Credit Reporting Act, I hereby authorize this company and
+                            its
+                            designated agents and representatives to conduct a comprehensive review of my background
+                            through any consumer report for employment. I understand that the scope of the consumer
+                            report/investigative consumer report may include, but is not limited to, the following
+                            areas: verification of Social Security number; current and previous residences;
+                            employment
+                            history, including all personnel files; education; references; credit history and
+                            reports;
+                            criminal history, including records from any criminal justice agency in any or all
+                            federal,
+                            state or county jurisdictions; birth records; motor vehicle records, including traffic
+                            citations and registration; and any other public records.
+                        </p>
+                    </fieldset>
+                    <fieldset class="acceptance">
+                        <ul class="acceptance__list row mt-2">
+                            <li class="acceptance__item col-md-8">
+                                <button class="btn acceptance__button form-control mb-1" id="acceptance-button"
+                                        type="button">
+                                </button>
+                                <label for="acceptance-button">Driver Signature</label>
+                            </li>
+                            <li class="acceptance__item col-md-4">
+                                <input type="date" class="form-control mb-1" id="acceptance-date-signed"
+                                       name="acceptance-date-signed">
+                                <label for="acceptance-date-signed">Date Signed</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <div class="row">
+                    <a href="./upload-medical.html" class="btn btn-secondary mt-2 col-md-2 ">
+                        Back
+                    </a>
+                    <a href="./alcohol-drug-test.html" class="btn btn-secondary mt-2 col-md-2  offset-md-1">
+                        Continue
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="application__process col-md-4">
+            <h2 class="title">
+                Application Process
+            </h2>
+            <ul class="application__process__list">
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Application For Employment
+                    </h3>
+                    <p class="application__process__text">
+                        Your general application information
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Upload Driver License Copy
+                    </h3>
+                    <p class="application__process__text">
+                        Provide a photo copy of your driver license.
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-done">
+                    <h3 class="application__process__name">
+                        Upload Medical Card Copy
+                    </h3>
+                    <p class="application__process__text">
+                        Provide a photo copy of your medical card.
+                    </p>
+                </li>
+                <li class="application__process__item application__process__item-active">
+                    <h3 class="application__process__name">
+                        Upload Forfeiture Documents
+                    </h3>
+                    <p class="application__process__text ">
+                        Your violations & annual review agreement.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Alcohol & Drug Test Statement
+                    </h3>
+                    <p class="application__process__text">
+                        Your alcohol & drug testing history statement.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Safety Performance History Investigation
+                    </h3>
+                    <p class="application__process__text">
+                        Previous employer investigation agreement.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        PSP Driver Authorization
+                    </h3>
+                    <p class="application__process__text">
+                        Authorization to run DOT PSP report.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Drug & Alcohol Clearinghouse Consent
+                    </h3>
+                    <p class="application__process__text">
+                        Authorization for Drug & Alcohol Clearinghouse.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        Alcohol & Drug Testing Policy
+                    </h3>
+                    <p class="application__process__text">
+                        Review employer's alcohol & drug testing policy.
+                    </p>
+                </li>
+                <li class="application__process__item">
+                    <h3 class="application__process__name">
+                        General Work Policy
+                    </h3>
+                    <p class="application__process__text">
+                        Review employer's general work policy.
+                    </p>
+                </li>
+            </ul>
+            <div class="save-finish-later">
+                <h3 class="save-finish-later__title">
+                    Save & Finish Later
+                </h3>
+                <p class="application__process__text">
+                    Your application is not sent or visible to the employer until it is 100% complete.
+                </p>
+                <button class="btn btn-secondary mt-3">Save & Finish Later</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="sign-document popup">
+    <div class="container">
+        <h2 class="subtitle">Sign Document</h2>
+        <p class="sign-document-important">Document: Application For Employment</p>
+        <p class="sign-document-descr">
+            This document is a DOT compliant Application For Employment.
+        </p>
+        <p class="sign-document-important">Signature: Applicant Signature</p>
+        <p class="sign-document-descr">
+            The signature of the applicant confirming submission of the Application For Employment.
+        </p>
+        <form action="" class="upload-violation-sign-form" id="upload-violation-sign-form">
+            <ul class="sign-document__list row">
+                <li class="sign-document__item col-md-7">
+                    <label for="uploadViolationDriverFullName">
+                        Full Name
+                    </label>
+                    <input type="text" id="uploadViolationDriverFullName" class="form-control"
+                           name="uploadViolationDriverFullName">
+                </li>
+                <li class="sign-document__item col-md-7">
+                    <label for="violation-sign-document-social-security-number">
+                        Social Security Number
+                    </label>
+                    <input type="text" id="violation-sign-document-social-security-number"
+                           class="form-control social-security-number"
+                           name="signDocumentSocialSecurityNumber">
+                </li>
+                <li class="sign-document__item col-md-7">
+                    <label for="repeat-sign-document-social-security-number">
+                        Repeat Social Security Number
+                    </label>
+                    <input type="text" id="repeat-sign-document-social-security-number"
+                           class="form-control social-security-number"
+                           name="repeatSignDocumentSocialSecurityNumber">
+                </li>
+                <li class="sign-document__item col-md-7">
+                    <label for="repeat-violation-sign-document-birth-date">
+                        Date of Birth
+                    </label>
+                    <input type="date" id="violation-sign-document-birth-date" class="form-control" min="1900-01-01"
+                           max="2021-02-28" name="signDocumentBirthDate">
+                </li>
+                <li class="sign-document__item col-md-7">
+                    <label for="repeat-violation-sign-document-birth-date">
+                        Repeat Date of Birth
+                    </label>
+                    <input type="date" id="repeat-violation-sign-document-birth-date" class="form-control"
+                           min="1900-01-01"
+                           max="2021-02-28" name="repeatSignDocumentBirthDate">
+                </li>
+            </ul>
+
+            <button class="btn btn-primary" id="sign-document-button" type="submit">Sign Document</button>
+            <button class="btn btn-secondary" id="cancel-sign-document-button">Cancel</button>
+        </form>
+    </div>
+</section>
+
+<div class="popup-overlay"></div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+</script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/additional-methods.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
