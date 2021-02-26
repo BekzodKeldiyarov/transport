@@ -19,7 +19,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ad471e2-4b3d-4f9d-8fea-b6c10bdc5ebd" name="Default Changelist" comment="validation&#10;email page&#10;pdf files&#10;landing mobile version bugs" />
+    <list default="true" id="dee5ea3e-d609-4d68-a6fb-bf4089b58f26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sass/blocks/_application-footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/blocks/_top-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/alcohol-drug-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/alcohol-drug-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/applicant.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/applicant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/applicant.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/applicant.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/form.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/form.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/new-application.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/new-application.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/return-applications.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/return-applications.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/upload.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/upload.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/drug-alcohol-clearinghouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/drug-alcohol-clearinghouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/general-work-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/general-work-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/new-application.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/new-application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/psp-driver-auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/psp-driver-auth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/return-application.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/return-application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/safety-performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/safety-performance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/testing-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/testing-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/upload-medical.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/upload-medical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/upload-violation.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/upload-violation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alcohol-drug-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/alcohol-drug-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicant.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drug-alcohol-clearinghouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/drug-alcohol-clearinghouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/form-initial.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/form-initial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/general-work-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/general-work-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new-application.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/new-application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/psp-driver-auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/psp-driver-auth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/return-application.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/return-application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/safety-performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/safety-performance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/applicant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/applicant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/base/_title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_title.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_applicant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_applicant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_application-process.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_application-process.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_forms-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_forms-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_new-application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_new-application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_return-application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_return-application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/return-applications.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/return-applications.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/upload.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/upload.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upload-medical.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload-medical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upload-violation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload-violation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +122,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="validation&#10;email page&#10;pdf files&#10;landing mobile version bugs" />
@@ -96,9 +141,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613568215208" />
-    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1613566640309">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="668" y="239" width="583" height="628" key="find.popup" timestamp="1614346090428">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613566640309" />
+    <state x="668" y="239" width="583" height="628" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1614346090428" />
   </component>
 </project>

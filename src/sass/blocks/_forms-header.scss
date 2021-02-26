@@ -1,12 +1,22 @@
 .form-initial__title {
-    text-align: center;
-    margin-left: auto;
-    -ms-flex-item-align: center;
-    align-self: center
+  text-align: right;
+  margin-left: auto;
+  align-self: center;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .form-header {
-    border-bottom: 1px solid #eee;
-    padding: 30px 0;
-    margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+
+.form-logo-wrapper {
+  img {
+    display: block;
+    width: 328px;
+    margin: 0 auto;
+  }
 }

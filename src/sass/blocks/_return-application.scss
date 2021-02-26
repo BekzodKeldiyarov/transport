@@ -1,70 +1,76 @@
 .return,
 .promo {
-    padding: 50px 0 10px;
+  padding: 50px 0 10px;
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 
-    fieldset {
-        margin: 30px 0;
-        padding: 30px 0;
-    }
+  fieldset {
+    margin: 30px 0;
+    padding: 30px 0;
+  }
 
-    .title {
-        text-align: center;
-        margin-left: auto;
-        align-self: center;
-    }
+  .title {
+    text-align: center;
+    margin-left: auto;
+    align-self: center;
+    font-size: 21px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+  }
 
-    .form-logo-wrapper {
-        img {
-            max-width: 100%;
-            width: 320px;
-        }
-    }
+  &__intro {
+    text-align: center;
+    font-size: 14px;
+  }
 
-    &__intro {
-        text-align: center;
-        font-size: 22px;
-    }
-
-    .note {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 680px;
-        width: 80%;
-        min-height: 40px;
-        border: 1px solid #8ed9f6;
-        border-radius: 10px;
-        text-align: center;
-        margin: 20px auto;
-        padding-left: 30px;
-        background-color: #E3F7FC;
-        position: relative;
-
-        &::before {
-            content: "";
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            top: 50%;
-            margin-top: -8px;
-            left: 10px;
-            background-image: url(./../icons/alert_notice.png);
-            background-repeat: no-repeat;
-        }
-    }
-
-    &__list {
-        text-align: center;
-        align-content: center;
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-    }
+  //change position
 }
+
+
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 680px;
+  width: 80%;
+  min-height: 40px;
+  border: 1px solid #8ed9f6;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  padding-left: 30px;
+  background-color: #E3F7FC;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 10px;
+    background-image: url(./../icons/alert_notice.png);
+    background-repeat: no-repeat;
+  }
+}
+
+//
+//&__list {
+//  text-align: center;
+//  align-content: center;
+//}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.return{
+  padding-bottom: 50px;
+}
+
